@@ -74,4 +74,14 @@ public class City {
     public void setCode(String code) {
         this.code = code;
     }
+
+    @Override
+    public String toString() {
+        return "City{" +
+                "name='" + name + '\'' +
+                ", province='" + province + '\'' +
+                ", pinyin='" + pinyin + '\'' +
+                ", code='" + code + '\'' +
+                '}';
+    }
 }
