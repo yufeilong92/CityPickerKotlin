@@ -6,4 +6,13 @@
 
     <color name="color_red">#FD2E4A</color>
     <color name="color_green">#13D1BE</color>
+
+
+    <color name="expression">#5555</color>
+
+    <color name="keyImp">#FF9000</color>
+    <color name="keyImpPressed">#FF7041</color>
+
+    <color name="keyBackground_normal">#E3E3ED</color>
+    <color name="keyBackground_pressed">#8888</color>
 </resources>
