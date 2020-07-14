@@ -6,6 +6,7 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Environment
 import android.util.Log
 import android.view.Gravity
 import android.widget.Toast
@@ -65,6 +66,14 @@ class Main4Activity : AppCompatActivity() {
         btn_one.setOnClickListener {
             createText()
         }
+        btn_two.setOnClickListener {
+            textTwo()
+        }
+    }
+
+    private fun textTwo(){
+        val dowm = getExternalFilesDir(Intent.ACTION_OPEN_DOCUMENT)
+
     }
 
     private fun initlIST() {
