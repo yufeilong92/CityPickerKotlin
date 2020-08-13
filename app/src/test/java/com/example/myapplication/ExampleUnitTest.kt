@@ -17,14 +17,47 @@ class ExampleUnitTest {
     fun addition_isCorrect() {
         assertEquals(4, 2 + 2)
     }
+
     @Test
-    fun text(){
+    fun text() {
         File("a.txt").readLines().forEach(::println)
 
     }
 
     @Test
-    fun texts(){
+    fun texts() {
+        var a = if (1 > 2) {
+            2
+        } else {
+            1
+        }
+        println(a)
+    }
+
+    @Test
+    fun textss() {
+        val list = listOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 0)
+        val single1 = list.any { it == 10 }
+        println(single1)
+        val mun = list.reduce { acc, i -> acc + i }
+        println(mun)
+        val strLists = listOf("a", "b", "c")
+        val str = strLists.reduce { acc, s -> acc + s }
+        println(str)
+        list.forEachIndexed { index, i ->
+//            println("$index==$i")
+        }
+        val take = list.take(3)
+//       println("${take.toString()}")
+
+        val takeWhile = list.takeWhile { it == 0 }
+//          println("${takeWhile.toString()}")
+
+        val filter = list.filter { it % 2 == 0 }
+         println("$filter")
 
     }
+
+
+
 }
