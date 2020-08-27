@@ -26,11 +26,10 @@ class ExampleUnitTest {
 
     @Test
     fun texts() {
-        var a = if (1 > 2) {
-            2
-        } else {
-            1
-        }
+        var a = 1
+        do {
+            a++
+        } while (a<20)
         println(a)
     }
 
@@ -54,10 +53,9 @@ class ExampleUnitTest {
 //          println("${takeWhile.toString()}")
 
         val filter = list.filter { it % 2 == 0 }
-         println("$filter")
+        println("$filter")
 
     }
-
 
 
 }
