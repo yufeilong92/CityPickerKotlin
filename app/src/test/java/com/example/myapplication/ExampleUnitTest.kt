@@ -29,33 +29,22 @@ class ExampleUnitTest {
         var a = 1
         do {
             a++
-        } while (a<20)
+        } while (a < 20)
         println(a)
     }
 
     @Test
     fun textss() {
-        val list = listOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 0)
-        val single1 = list.any { it == 10 }
-        println(single1)
-        val mun = list.reduce { acc, i -> acc + i }
-        println(mun)
-        val strLists = listOf("a", "b", "c")
-        val str = strLists.reduce { acc, s -> acc + s }
-        println(str)
-        list.forEachIndexed { index, i ->
-//            println("$index==$i")
-        }
-        val take = list.take(3)
-//       println("${take.toString()}")
-
-        val takeWhile = list.takeWhile { it == 0 }
-//          println("${takeWhile.toString()}")
-
-        val filter = list.filter { it % 2 == 0 }
-        println("$filter")
-
+        val kNumber = getKNumber(4, 1052,100)
+        println(kNumber)
     }
 
-
+    fun getKNumber(k: Int, num: Int,number:Int): Int {
+        //如果k越界，则返回-1
+        return if (Math.pow(10.0, k - 1.toDouble()) > num) {
+            -1
+        } else {
+            num / Math.pow(10.0, k - 1.toDouble()).toInt() % number
+        }
+    }
 }
