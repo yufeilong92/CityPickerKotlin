@@ -20,19 +20,23 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity13">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".niceimageview.MainActivity12">
 
         </activity>
         <activity android:name=".calendarview.MainActivity11" />
         <activity android:name=".calendar.MainActivity7"></activity>
-        <activity android:name=".MainActivity6" />
-        <activity android:name=".MainActivity5" />
+        <activity android:name=".MainActivity6">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity5" >
+
+        </activity>
         <activity android:name=".MainActivity4" />
         <activity android:name=".MainActivity3" />
         <activity android:name=".MainActivity2" />
