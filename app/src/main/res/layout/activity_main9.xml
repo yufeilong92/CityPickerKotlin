@@ -10,11 +10,11 @@
         android:layout_width="match_parent"
         android:text="测试验收"
         android:id="@+id/tv_main_6"
+        android:visibility="gone"
         android:layout_height="wrap_content"/>
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:id="@+id/rlv_main6_content"
-        android:visibility="gone"
         android:layout_height="match_parent"/>
 
 </LinearLayout>
