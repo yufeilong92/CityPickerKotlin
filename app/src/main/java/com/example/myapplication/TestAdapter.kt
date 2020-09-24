@@ -18,7 +18,5 @@ class TestAdapter(mContext: Context, data: MutableList<String>) :
         holder.setText(R.id.tv_text_content, item)
             .setText(R.id.tv_text_contentone,item)
             .setText(R.id.tv_text_contenttwo,item)
-        addChildClickViewIds(R.id.tv_text_content,R.id.et_text_content,R.id.tv_text_contentone,R.id.tv_text_contenttwo)
-
     }
 }
